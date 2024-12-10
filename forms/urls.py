@@ -1,6 +1,6 @@
 from django.urls import path
-from .views import FormDetail
+from . import views
 
 urlpatterns = [
-    path("<int:pk>/detail", FormDetail.as_view(), name="form"),
+    path("", views.index, name="index"),
 ]
