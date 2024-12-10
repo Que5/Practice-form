@@ -2,7 +2,7 @@ from django import forms
 from .models import Form
 from phonenumber_field.widgets import PhoneNumberPrefixWidget
 
-class ContactForm(forms.modelForm):
+class ContactForm(forms.ModelForm):
     class Meta:
         model = Form
         widgets = {
